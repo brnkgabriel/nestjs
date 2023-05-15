@@ -1,0 +1,11 @@
+GET http://localhost:3000/cats/?id=2
+
+###
+POST http://localhost:3000/cats
+Content-Type: application/json
+{
+  "name": "hey"
+}
+
+###
+GET http://localhost:3000/cats/breed
