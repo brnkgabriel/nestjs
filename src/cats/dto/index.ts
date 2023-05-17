@@ -1,6 +1,11 @@
-/* eslint-disable prettier/prettier */
+import { IsString, IsInt } from 'class-validator'
+
 export class CreateCatDto {
-  readonly name: string;
+  @IsString()
+  name: string;
+
+  @IsInt()
+  age: number
 }
 
 
@@ -11,3 +16,4 @@ export class ListAllEntities {
 export class UpdateCatDto {
   readonly name: string;
 }
+ 
